@@ -5,14 +5,14 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@vega-lite@4"></script>
   <!-- Import vega-embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@vega-embed@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
 
 <div id="vis"></div>
 
 <script type="text/javascript">
-  var spec = "https://towen123.github.io/FIT3179/visualization.vl (1).json";
+  var spec = "https://towen123.github.io/FIT3179/example.json";
   vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
