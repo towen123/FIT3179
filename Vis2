@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+<h1>House Prices across Australia</h1>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+
+<h2>Where are the most Sales?</h2>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+<div id="vis1"></div>
+
+<h2>What about Property Types?</h2>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+<div id="vis2"></div>
+
+<h2>How much will more Bedrooms Cost?</h2>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+<div id="vis3"></div>
+
+<h2>Location, Location, Location!</h2>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+<div id="vis4"></div>
+<p>Interested in investing in Australian Property? Unsure of the house prices in different states? Want to know what prices to expect? This infographic has all you need!</p>
+<div id="vis5"></div>
+<div id="vis6"></div>
+<div id="vis7"></div>
+<div id="vis8"></div>
+<div id="vis9"></div>
+
+<script type="text/javascript">
+  var specVis1 = "https://towen123.github.io/FIT3179/stackedbar.json";
+  var specVis2= "https://towen123.github.io/FIT3179/prop_av.json";
+  var specVis3= "https://towen123.github.io/FIT3179/bedrooms.json";
+  var specVis4= "https://towen123.github.io/FIT3179/melb.json";
+  var specVis5= "https://towen123.github.io/FIT3179/syd.json";
+  var specVis6= "https://towen123.github.io/FIT3179/bris.json";
+  var specVis7= "https://towen123.github.io/FIT3179/adel.json";
+  var specVis8= "https://towen123.github.io/FIT3179/canb.json";
+  var specVis9= "https://towen123.github.io/FIT3179/perth.json";
+
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+          
+  vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+ 
+   vegaEmbed('#vis6', specVis6, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+   vegaEmbed('#vis7', specVis7, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  vegaEmbed('#vis8', specVis8, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+          
+  vegaEmbed('#vis9', specVis9, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+</body>
+</html>
