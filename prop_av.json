@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": "container",
+  "height": 250,
+  "title": "Average House Price for different Number of Bedrooms",
+  "data": {
+    "url": "https://raw.githubusercontent.com/towen123/FIT3179/main/prop_av.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Property Type", "axis": {"labelAngle": 0}},
+    "y": {
+      "field": "Price",
+      "type": "quantitative",
+      "title": "Average Price ($AUD)"
+    }
+  },
+  "config": {}
+}

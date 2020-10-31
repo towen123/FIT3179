@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": "container",
+  "height": 250,
+  "title": "Average House Price across State",
+  "data": {
+    "url": "https://raw.githubusercontent.com/towen123/FIT3179/main/average.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "State", "axis": {"labelAngle": 0}},
+    "y": {
+      "field": "Average",
+      "type": "quantitative",
+      "title": "Average Price ($AUD)"
+    },
+    "tooltip": [
+      {"field": "State"},
+      {"field": "Average", "title": "Average Price ($AUD)"}
+    ],
+    "color": {
+      "field": "State",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": ["ACT", "NSW", "VIC", "QLD", "WA", "SA"],
+        "range": [
+          "#e41a1c",
+          "#377eb8",
+          "#4daf4a",
+          "#984ea3",
+          "#ff7f00",
+          "#ffff33"
+        ]
+      }
+    }
+  },
+  "config": {}
+}
