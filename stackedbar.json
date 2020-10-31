@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 500,
+  "width": 400,
+  "title": "Property Types Sold around Australia",
+  "data": {
+    "url": "https://raw.githubusercontent.com/towen123/FIT3179/main/property_data.csv"
+  },
+  "params": [
+    {
+      "name": "State_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "ACT", "NSW", "QLD", "SA", "VIC", "WA"],
+        "labels": ["Show All", "ACT", "NSW", "QLD", "SA", "VIC", "WA"],
+        "name": "State Selection"
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "State_selection == null || datum.state == State_selection"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "property_type",
+      "type": "nominal",
+      "title": "Property Type",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {
+      "aggregate": "count",
+      "field": "price",
+      "type": "quantitative",
+      "title": "Count",
+      "scale": {"domain": [0, 180000]}
+    },
+    "tooltip": [
+      {"field": "state", "type": "nominal", "title": "State"},
+      {
+        "aggregate": "valid",
+        "field": "price",
+        "type": "quantitative",
+        "title": "Count"
+      },
+      {"field": "property_type", "type": "nominal", "title": "Property Type"}
+    ],
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "scale": {
+        "domain": ["ACT", "NSW", "VIC", "QLD", "WA", "SA"],
+        "range": [
+          "#e41a1c",
+          "#377eb8",
+          "#4daf4a",
+          "#984ea3",
+          "#ff7f00",
+          "#ffff33"
+        ]
+      },
+      "title": "State"
+    }
+  },
+  "config": {}
+}
