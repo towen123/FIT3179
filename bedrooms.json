@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": "container",
-  "height": 500,
-  "width": 400,
+  "height": 400,
+  "width": 600,
   "title": "Average House Price for different Number of Bedrooms",
   "data": {
     "url": "https://raw.githubusercontent.com/towen123/FIT3179/main/bedroom_av.csv"
