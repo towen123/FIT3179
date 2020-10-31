@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height": 500,
+  "height": 250,
   "width": 400,
   "title": "Property Types Sold around Australia",
   "data": {
